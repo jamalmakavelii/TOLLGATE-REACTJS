@@ -1,0 +1,85 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-size: 16px; /* Set a base font size for easier scaling */
+  }
+  
+  .hero {
+    display: flex;
+    background-color: #50623A;
+    color: #ffc107;
+    padding: 0 1rem; /* Use rem for padding for better responsiveness */
+  }
+  
+  .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem; /* Use rem for padding */
+  }
+  
+  .hero-text {
+    font-size: 2.4rem; /* Use rem for font sizes */
+    margin-bottom: 1rem;
+    word-spacing: 2%;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    flex: 1;
+    background-image: url('C:\Users\Erril st0nks\OneDrive\Desktop\TOLLGATE-REACTJS\client\public\Images\tollgate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  
+    .hero-text {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .hero-description {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  
+    .hero-image {
+      background-size: cover;
+    }
+  }
+  
+  /* Additional media queries for very small screens (optional) */
+  
+  @media (max-width: 480px) {
+    .hero-text {
+      font-size: 1.8rem; /* Further adjust for smallest screens */
+    }
+  
+    .hero-description {
+      font-size: 0.8rem; /* Further adjust for smallest screens */
+    }
+  }
